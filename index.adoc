@@ -1,5 +1,5 @@
-= Hello, AsciiDoc!
-Doc Writer <doc@example.com>
+= PROCESSAMENTO DIGITAL DE IMAGENS
+Joelson Rocha <joelsonrocha.eng@gmail.com>
 
 An introduction to http://asciidoc.org[AsciiDoc].
 
