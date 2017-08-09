@@ -4,7 +4,7 @@ Joelson Rocha <JoelsonRocha.Eng@gmail.com>
 
 == Introdução
 
-Este espaço tem como objetivo documentar as atividades realizadas por mim e propostas pelo professor Agostinho Medeiros Brito Júnior durante a disciplina de Processamento Digital de Imagens. Aqui compartilho seus enunciados, a fundamentação teórica envolvida no problema, as soluções comentadas e implementadas por mim, bem como a saída em terminal UNIX.
+Este espaço tem como objetivo documentar as atividades realizadas por mim e propostas pelo professor Agostinho Medeiros Brito Júnior durante a disciplina de Processamento Digital de Imagens. Aqui compartilho os enunciados de cada atividade, a fundamentação teórica envolvida nos problemas, as soluções comentadas e implementadas por mim, bem como a saída em terminal UNIX.
 
 
 == 1. Unidade I
