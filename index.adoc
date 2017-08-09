@@ -1,12 +1,12 @@
-= PROCESSAMENTO DIGITAL DE IMAGENS
-Joelson Rocha <joelsonrocha.eng@gmail.com>
+= DCA0445: Processamento Digital de Imagens
+Joelson Rocha <JoelsonRocha.Eng@gmail.com>
+:toc: left
 
-An introduction to http://asciidoc.org[AsciiDoc].
+== Introdução
 
-== First Section
+Este espaço tem como objetivo documentar as atividades realizadas por mim e propostas pelo professor Agostinho Medeiros Brito Júnior durante a disciplina de Processamento Digital de Imagens. Aqui compartilho seus enunciados, a fundamentação teórica envolvida no problema, as soluções comentadas e implementadas por mim, bem como a saída em terminal UNIX.
 
-* item 1
-* item 2
 
-[source,ruby]
-puts "Hello, World!"
+== 1. Unidade I
+
+=== 1.1 Invertendo cores de uma região
