@@ -1,12 +1,44 @@
+:source-highlighter: pygments //codigo ficar colorido
+:stem: // equacoes com mathjax
 = DCA0445: Processamento Digital de Imagens
 Joelson Rocha <JoelsonRocha.Eng@gmail.com>
 :toc: left
 
 == Introdução
 
-Este espaço tem como objetivo documentar as atividades realizadas por mim e propostas pelo professor Agostinho Medeiros Brito Júnior durante a disciplina de Processamento Digital de Imagens. Aqui compartilho os enunciados de cada atividade, a fundamentação teórica envolvida nos problemas, as soluções comentadas e implementadas por mim, bem como a saída em terminal UNIX.
+Este espaço tem como objetivo documentar as atividades realizadas por mim, com auxílio da biblioteca de visão artifical OpenCV, e propostas pelo professor Agostinho Medeiros Brito Júnior durante a disciplina de Processamento Digital de Imagens. Aqui compartilho os enunciados de cada atividade, a fundamentação teórica envolvida nos problemas, as soluções comentadas e implementadas por mim, bem como a saída em terminal UNIX.
+
+Os códigos foram desenvolvidos na linguagem de programação C++.
 
 
-== 1. Unidade I
+== 1. Unidade I ==
 
-=== 1.1 Invertendo cores de uma região
+=== 1.1 Invertendo cores de uma região ===
+
+//suporte a figuras png,jpg,gif e SVG
+// Link: url[texto_exibido]
+//incluir figura, arquivos: <<fig_hello>>
+//[[fig_hello,Hello]]
+//text[.text-center]
+//.Saída do programa hello
+//image:: caminho ao arquivo[saida do programa hello, title 
+//"saida do programa hello"]
+
+//INCLUIR CÓDIGO FONTE
+
+//[[exa_hello,Hello]]
+//[source,cpp]
+//.hello.cpp
+//----
+//include::exemplos/hello.cpp[]
+//----
+
+// USO DE EQUAÇÕES
+
+//podem ser inseridas equacoes como stem:[\int_a^b f(x)dx]
+//BIBLIOGRAFIA
+
+//== BIBILIOGRAFIA ==
+[bibliography]
+
+//:imagesdir: ./figs
