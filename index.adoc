@@ -1,12 +1,12 @@
-:source-highlighter: pygments //codigo ficar colorido
-:stem: // equacoes com mathjax
+:source-highlighter: pygments 	
+:stem: 
 = DCA0445: Processamento Digital de Imagens
 Joelson Rocha <JoelsonRocha.Eng@gmail.com>
 :toc: left
 
 == Introdução
 
-Este espaço tem como objetivo documentar as atividades realizadas por mim, com auxílio da biblioteca de visão artifical OpenCV, e propostas pelo professor Agostinho Medeiros Brito Júnior durante a disciplina de Processamento Digital de Imagens. Aqui compartilho os enunciados de cada atividade, a fundamentação teórica envolvida nos problemas, as soluções comentadas e implementadas por mim, bem como a saída em terminal UNIX.
+Este espaço tem como objetivo documentar as atividades realizadas, com auxílio da biblioteca de visão artifical OpenCV, e propostas pelo professor Agostinho Medeiros Brito Júnior durante a disciplina de Processamento Digital de Imagens. Aqui são compartilhados os enunciados de cada atividade, suas fundamentações teóricas, a solução comentada e implementada, bem como a saída em terminal UNIX.
 
 Os códigos foram desenvolvidos na linguagem de programação C++.
 
@@ -14,7 +14,7 @@ Os códigos foram desenvolvidos na linguagem de programação C++.
 == 1. Unidade I ==
 
 === 1.1 Invertendo cores de uma região ===
-
+Este programa deverá ser capaz de receber como entrada dois pontos, stem:[\P_{1}] e stem:[\P_{2}] que compõem um retângulo de vértices opostos. O programa será capaz de criar o efeito de negativo  na região delimitada pelo usuário.	
 //suporte a figuras png,jpg,gif e SVG
 // Link: url[texto_exibido]
 //incluir figura, arquivos: <<fig_hello>>
@@ -26,12 +26,12 @@ Os códigos foram desenvolvidos na linguagem de programação C++.
 
 //INCLUIR CÓDIGO FONTE
 
-//[[exa_hello,Hello]]
-//[source,cpp]
-//.hello.cpp
-//----
-//include::exemplos/hello.cpp[]
-//----
+[[exa_hello,Hello]]
+[source,cpp]
+.regions.cpp
+----
+include::PDI/regions.cpp[]
+----
 
 // USO DE EQUAÇÕES
 
