@@ -85,6 +85,5 @@ if (P2_X > largura or P2_Y > largura)
 	}	
 else{
 	cout<<"Infelizmente voce nao escolheu pontos em vertices opostos."<<endl;
-}
-return 0;
+}return 0;
 }	
