@@ -48,6 +48,7 @@ O programa link:PDI/trocaregioes.cpp[trocaregiões] é capaz de dividir a imagem
 include::PDI/trocaregioes.cpp[]
 ----
 
+
 .Antes e depois:
 
 image:trocaregioesbefore.png[]
