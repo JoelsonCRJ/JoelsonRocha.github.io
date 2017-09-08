@@ -1,5 +1,6 @@
 :source-highlighter: pygments 	
-:imagesdir: figures
+:imagesdir: ./figures
+
 :stem: 
 
 = DCA0445: Processamento Digital de Imagens
@@ -14,16 +15,13 @@ Os códigos foram desenvolvidos na linguagem de programação C++.
 
 
 == 1. Unidade I ==
+.Imagens utilizadas:
+
+image:biel.png[]
+image:bolhas.png["role=right"]
 
 === 1.1 Invertendo cores de uma região ===
-O programa link:PDI/regions.cpp[regions] é capaz de receber como entrada dois pontos (stem:[\P_{1}] e stem:[\P_{2}])  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada na imagem abaixo.	
-//suporte a figuras png,jpg,gif e SVG
-// Link: [texto_exibido]
-
-image::regions.png[]
-
-
-//INCLUIR CÓDIGO FONTE
+O programa link:PDI/regions.cpp[regions] é capaz de receber como entrada dois pontos (stem:[\P_{1}] e stem:[\P_{2}])  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada.	
 
 [[exa_hello,Hello]]
 [source,cpp]
@@ -31,18 +29,26 @@ image::regions.png[]
 ----
 include::PDI/regions.cpp[]
 ----
-=== 1.1 Invertendo quadrantes de uma imagem ===
-O programa link:PDI/trocaregioes.cpp[trocaregiões] é capaz de dividir a imagem em quatro partes.
 
-image::trocaregioesbefore.png[]
+.Antes e depois:
+image:biel.png[]
+image:regions.png["role=right"]
 
-Feito isso, o programa os inverte em diagonal.
 
-image::trocaregioes.png[]
+//INCLUIR CÓDIGO FONTE
+
+
+=== 1.2 Invertendo quadrantes de uma imagem ===
+O programa link:PDI/trocaregioes.cpp[trocaregiões] é capaz de dividir a imagem em quatro partes e inverter seus quadrantes em diagonal.
 
 [[exa,Hello]]
 [source,cpp]
-.regions.cpp
+.trocaregioes.cpp
 ----
 include::PDI/trocaregioes.cpp[]
 ----
+
+.Antes e depois:
+
+image:trocaregioesbefore.png[]
+image:trocaregioes.png[256,256,"role=right"]
