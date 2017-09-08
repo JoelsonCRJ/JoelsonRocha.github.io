@@ -1,4 +1,5 @@
 :source-highlighter: pygments 	
+:imagesdir: figures
 :stem: 
 
 = DCA0445: Processamento Digital de Imagens
@@ -15,12 +16,12 @@ Os códigos foram desenvolvidos na linguagem de programação C++.
 == 1. Unidade I ==
 
 === 1.1 Invertendo cores de uma região ===
-O programa link:PDI/regions.cpp[regions] é capaz de receber como entrada dois pontos (stem:[\P_{1}] e stem:[\P_{2}])  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada na imagem abaixo,.	
+O programa link:PDI/regions.cpp[regions] é capaz de receber como entrada dois pontos (stem:[\P_{1}] e stem:[\P_{2}])  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada na imagem abaixo.	
 //suporte a figuras png,jpg,gif e SVG
 // Link: [texto_exibido]
 
-image::figures/regions.png[]
-.Saída do programa Regions.
+image::regions.png[]
+
 
 //INCLUIR CÓDIGO FONTE
 
@@ -30,7 +31,18 @@ image::figures/regions.png[]
 ----
 include::PDI/regions.cpp[]
 ----
+=== 1.1 Invertendo quadrantes de uma imagem ===
+O programa link:PDI/trocaregioes.cpp[trocaregiões] é capaz de dividir a imagem em quatro partes.
 
+image::trocaregioesbefore.png[]
 
+Feito isso, o programa os inverte em diagonal.
 
+image::trocaregioes.png[]
 
+[[exa,Hello]]
+[source,cpp]
+.regions.cpp
+----
+include::PDI/trocaregioes.cpp[]
+----

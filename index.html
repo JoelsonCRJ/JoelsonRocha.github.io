@@ -511,6 +511,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_1_unidade_i">1. Unidade I</a>
 <ul class="sectlevel2">
 <li><a href="#_1_1_invertendo_cores_de_uma_região">1.1 Invertendo cores de uma região</a></li>
+<li><a href="#_1_1_invertendo_quadrantes_de_uma_imagem">1.1 Invertendo quadrantes de uma imagem</a></li>
 </ul>
 </li>
 </ul>
@@ -534,7 +535,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_1_1_invertendo_cores_de_uma_região">1.1 Invertendo cores de uma região</h3>
 <div class="paragraph">
-<p>O programa <a href="PDI/regions.cpp">regions</a> é capaz de receber como entrada dois pontos (\$\P_{1}\$ e \$\P_{2}\$)  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada na imagem abaixo,.</p>
+<p>O programa <a href="PDI/regions.cpp">regions</a> é capaz de receber como entrada dois pontos (\$\P_{1}\$ e \$\P_{2}\$)  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada na imagem abaixo.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -636,12 +637,72 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_1_1_invertendo_quadrantes_de_uma_imagem">1.1 Invertendo quadrantes de uma imagem</h3>
+<div class="paragraph">
+<p>O programa <a href="PDI/trocaregioes.cpp">trocaregiões</a> é capaz de dividir a imagem em quatro partes.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="figures/trocaregioesbefore.png" alt="trocaregioesbefore">
+</div>
+</div>
+<div class="paragraph">
+<p>Feito isso, o programa os inverte em diagonal.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="figures/trocaregioes.png" alt="trocaregioes">
+</div>
+</div>
+<div id="exa" class="listingblock">
+<div class="title">regions.cpp</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="cpp"><span></span><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;iostream&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;opencv2/opencv.hpp&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;highgui.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cv.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-k">using</span> <span class="tok-k">namespace</span> <span class="tok-n">cv</span><span class="tok-p">;</span>
+<span class="tok-k">using</span> <span class="tok-k">namespace</span> <span class="tok-n">std</span><span class="tok-p">;</span>
+
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">argc</span><span class="tok-p">,</span> <span class="tok-kt">char</span> <span class="tok-k">const</span> <span class="tok-o">*</span><span class="tok-n">argv</span><span class="tok-p">[])</span>
+<span class="tok-p">{</span>
+
+<span class="tok-n">Mat</span> <span class="tok-n">image</span> <span class="tok-p">;</span>
+<span class="tok-kt">int</span> <span class="tok-n">altura</span><span class="tok-p">,</span> <span class="tok-n">largura</span><span class="tok-p">;</span>
+<span class="tok-n">image</span><span class="tok-o">=</span><span class="tok-n">imread</span><span class="tok-p">(</span><span class="tok-s">&quot;biel.png&quot;</span><span class="tok-p">,</span><span class="tok-n">CV_LOAD_IMAGE_GRAYSCALE</span><span class="tok-p">);</span>
+<span class="tok-k">if</span><span class="tok-p">(</span><span class="tok-o">!</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">data</span><span class="tok-p">){</span>
+	<span class="tok-n">cout</span><span class="tok-o">&lt;&lt;</span><span class="tok-s">&quot;nao abriu biel.png&quot;</span><span class="tok-o">&lt;&lt;</span><span class="tok-n">endl</span><span class="tok-p">;</span>
+<span class="tok-p">}</span>
+<span class="tok-n">altura</span> <span class="tok-o">=</span> <span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">rows</span><span class="tok-p">;</span>
+<span class="tok-n">largura</span> <span class="tok-o">=</span> <span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">cols</span><span class="tok-p">;</span>
+<span class="tok-n">cout</span><span class="tok-o">&lt;&lt;</span><span class="tok-s">&quot;ALTURA: &quot;</span><span class="tok-o">&lt;&lt;</span> <span class="tok-n">altura</span><span class="tok-o">&lt;&lt;</span><span class="tok-s">&quot; LARGURA: &quot;</span> <span class="tok-o">&lt;&lt;</span> <span class="tok-n">largura</span><span class="tok-o">&lt;&lt;</span><span class="tok-n">endl</span><span class="tok-p">;</span>
+
+<span class="tok-n">Mat</span> <span class="tok-n">imagem_final</span><span class="tok-p">(</span><span class="tok-n">altura</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-p">,</span><span class="tok-n">DataType</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;::</span><span class="tok-n">type</span><span class="tok-p">);</span>
+<span class="tok-n">Mat</span> <span class="tok-n">A</span> <span class="tok-o">=</span> <span class="tok-n">image</span><span class="tok-p">(</span><span class="tok-n">Rect</span><span class="tok-p">(</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">));</span>
+<span class="tok-n">Mat</span> <span class="tok-n">B</span> <span class="tok-o">=</span> <span class="tok-n">image</span><span class="tok-p">(</span><span class="tok-n">Rect</span><span class="tok-p">(</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">));</span>
+<span class="tok-n">Mat</span> <span class="tok-n">C</span> <span class="tok-o">=</span> <span class="tok-n">image</span><span class="tok-p">(</span><span class="tok-n">Rect</span><span class="tok-p">(</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">));</span>
+<span class="tok-n">Mat</span> <span class="tok-n">D</span> <span class="tok-o">=</span> <span class="tok-n">image</span><span class="tok-p">(</span><span class="tok-n">Rect</span><span class="tok-p">(</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">));</span>
+
+<span class="tok-n">A</span><span class="tok-p">.</span><span class="tok-n">copyTo</span><span class="tok-p">(</span><span class="tok-n">imagem_final</span><span class="tok-p">(</span><span class="tok-n">Rect</span><span class="tok-p">(</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">)));</span>
+<span class="tok-n">B</span><span class="tok-p">.</span><span class="tok-n">copyTo</span><span class="tok-p">(</span><span class="tok-n">imagem_final</span><span class="tok-p">(</span><span class="tok-n">Rect</span><span class="tok-p">(</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">)));</span>
+<span class="tok-n">C</span><span class="tok-p">.</span><span class="tok-n">copyTo</span><span class="tok-p">(</span><span class="tok-n">imagem_final</span><span class="tok-p">(</span><span class="tok-n">Rect</span><span class="tok-p">(</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">)));</span>
+<span class="tok-n">D</span><span class="tok-p">.</span><span class="tok-n">copyTo</span><span class="tok-p">(</span><span class="tok-n">imagem_final</span><span class="tok-p">(</span><span class="tok-n">Rect</span><span class="tok-p">(</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-n">altura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">,</span><span class="tok-n">largura</span><span class="tok-o">/</span><span class="tok-mi">2</span><span class="tok-p">)));</span>
+
+
+<span class="tok-n">imshow</span><span class="tok-p">(</span><span class="tok-s">&quot;janela_final&quot;</span><span class="tok-p">,</span><span class="tok-n">imagem_final</span><span class="tok-p">);</span>
+		<span class="tok-n">waitKey</span><span class="tok-p">();</span>
+<span class="tok-k">return</span> <span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-09-04 12:26:12 BRT
+Last updated 2017-09-08 05:13:05 BRT
 </div>
 </div>
 <script type="text/x-mathjax-config">
