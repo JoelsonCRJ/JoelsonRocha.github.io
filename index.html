@@ -512,6 +512,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_1_1_invertendo_cores_de_uma_região">1.1 Invertendo cores de uma região</a></li>
 <li><a href="#_1_2_invertendo_quadrantes_de_uma_imagem">1.2 Invertendo quadrantes de uma imagem</a></li>
+<li><a href="#_1_3_rotulando_e_realizando_contagem_de_objetos_pertencentes_a_uma_imagem">1.3 Rotulando e realizando contagem de objetos pertencentes a uma imagem</a></li>
 </ul>
 </li>
 </ul>
@@ -540,7 +541,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_1_1_invertendo_cores_de_uma_região">1.1 Invertendo cores de uma região</h3>
 <div class="paragraph">
-<p>O programa <a href="PDI/regions.cpp">regions</a> é capaz de receber como entrada dois pontos (\$\P_{1}\$ e \$\P_{2}\$)  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada.</p>
+<p>O programa <a href="PDI/regions.cpp">regions.cpp</a> é capaz de receber como entrada dois pontos (\$\P_{1}\$ e \$\P_{2}\$)  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada.</p>
 </div>
 <div id="exa_hello" class="listingblock">
 <div class="title">regions.cpp</div>
@@ -627,7 +628,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 			<span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">at</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;</span><span class="tok-p">(</span><span class="tok-n">i</span><span class="tok-p">,</span><span class="tok-n">j</span><span class="tok-p">)</span><span class="tok-o">=</span><span class="tok-mi">255</span><span class="tok-o">-</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">at</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;</span><span class="tok-p">(</span><span class="tok-n">i</span><span class="tok-p">,</span><span class="tok-n">j</span><span class="tok-p">);</span>
 			<span class="tok-p">}</span>
 		<span class="tok-p">}</span>
-		<span class="tok-n">imshow</span><span class="tok-p">(</span><span class="tok-s">&quot;janela&quot;</span><span class="tok-p">,</span><span class="tok-n">image</span><span class="tok-p">);</span>
+		<span class="tok-n">imshow</span><span class="tok-p">(</span><span class="tok-s">&quot;image&quot;</span><span class="tok-p">,</span><span class="tok-n">image</span><span class="tok-p">);</span>
 		<span class="tok-n">waitKey</span><span class="tok-p">();</span>
 	<span class="tok-p">}</span>
 <span class="tok-k">else</span><span class="tok-p">{</span>
@@ -645,7 +646,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_1_2_invertendo_quadrantes_de_uma_imagem">1.2 Invertendo quadrantes de uma imagem</h3>
 <div class="paragraph">
-<p>O programa <a href="PDI/trocaregioes.cpp">trocaregiões</a> é capaz de dividir a imagem em quatro partes e inverter seus quadrantes em diagonal.</p>
+<p>O programa <a href="PDI/trocaregioes.cpp">trocaregioes.cpp</a> é capaz de dividir a imagem em quatro partes e inverter seus quadrantes em diagonal.</p>
 </div>
 <div id="exa" class="listingblock">
 <div class="title">trocaregioes.cpp</div>
@@ -688,7 +689,107 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <div class="title">Antes e depois:</div>
 <p><span class="image"><img src="./figures/trocaregioesbefore.png" alt="trocaregioesbefore"></span>
-<span class="image"><img src="./figures/trocaregioes.png" alt="256" width="256" height="role=right"></span></p>
+<span class="image"><img src="./figures/trocaregioes.png" alt="role=right"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_3_rotulando_e_realizando_contagem_de_objetos_pertencentes_a_uma_imagem">1.3 Rotulando e realizando contagem de objetos pertencentes a uma imagem</h3>
+<div class="paragraph">
+<p>O objetivo dessa prática de programação foi aprimorar o programa <a href="PDI/labeling.cpp">labeling.cpp</a> ,previamento desenvolvido pelo professor Agostinho, da seguinte maneira: o algorítmo ignora objetos que estejam no limite da borda da figura e faz destinção de objetos com buracos em seu interior e objetos que não contenham buracos.</p>
+</div>
+<div class="paragraph">
+<p>O programa <a href="PDI/labeling_aprimorado.cpp">labeling_aprimorado.cpp</a> foi desenvolvido e seu código segue abaixo, bem como seus resultados.</p>
+</div>
+<div id="exa1" class="listingblock">
+<div class="title">labeling_aprimorado.cpp</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="cpp"><span></span><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;iostream&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;opencv2/opencv.hpp&gt;</span><span class="tok-cp"></span>
+<span class="tok-k">using</span> <span class="tok-k">namespace</span> <span class="tok-n">cv</span><span class="tok-p">;</span>
+<span class="tok-k">using</span> <span class="tok-k">namespace</span> <span class="tok-n">std</span><span class="tok-p">;</span>
+<span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">argc</span><span class="tok-p">,</span> <span class="tok-kt">char</span><span class="tok-o">**</span> <span class="tok-n">argv</span><span class="tok-p">){</span>
+  <span class="tok-n">Mat</span> <span class="tok-n">image</span><span class="tok-p">,</span> <span class="tok-n">mask</span><span class="tok-p">;</span>
+  <span class="tok-kt">int</span> <span class="tok-n">width</span><span class="tok-p">,</span> <span class="tok-n">height</span><span class="tok-p">;</span>
+  <span class="tok-kt">int</span> <span class="tok-n">nobjects</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-n">nobjectscomburaco</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">,</span><span class="tok-n">tonNpossuiBuraco</span><span class="tok-o">=</span><span class="tok-mi">150</span><span class="tok-p">,</span><span class="tok-n">tonPossuiBuraco</span><span class="tok-o">=</span><span class="tok-mi">80</span><span class="tok-p">;</span>
+  <span class="tok-n">CvPoint</span> <span class="tok-n">p</span><span class="tok-p">;</span>
+  <span class="tok-n">image</span> <span class="tok-o">=</span> <span class="tok-n">imread</span><span class="tok-p">(</span><span class="tok-n">argv</span><span class="tok-p">[</span><span class="tok-mi">1</span><span class="tok-p">],</span><span class="tok-n">CV_LOAD_IMAGE_GRAYSCALE</span><span class="tok-p">);</span>
+
+  <span class="tok-k">if</span><span class="tok-p">(</span><span class="tok-o">!</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">data</span><span class="tok-p">){</span>
+    <span class="tok-n">std</span><span class="tok-o">::</span><span class="tok-n">cout</span> <span class="tok-o">&lt;&lt;</span> <span class="tok-s">&quot;imagem nao carregou corretamente</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">;</span>
+    <span class="tok-k">return</span><span class="tok-p">(</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">);</span>
+  <span class="tok-p">}</span>
+  <span class="tok-n">width</span><span class="tok-o">=</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">size</span><span class="tok-p">().</span><span class="tok-n">width</span><span class="tok-p">;</span>
+  <span class="tok-n">height</span><span class="tok-o">=</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">size</span><span class="tok-p">().</span><span class="tok-n">height</span><span class="tok-p">;</span>
+
+  <span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">x</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">;</span>
+  <span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">y</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-c1">//criando a margem de 1 pixel em tom 255 (branco)</span>
+<span class="tok-k">for</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">x</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">;</span><span class="tok-n">x</span><span class="tok-o">&lt;</span><span class="tok-n">height</span><span class="tok-p">;</span><span class="tok-o">++</span><span class="tok-n">x</span><span class="tok-p">){</span>
+  <span class="tok-k">for</span> <span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">y</span> <span class="tok-o">=</span> <span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-n">y</span> <span class="tok-o">&lt;</span> <span class="tok-n">width</span><span class="tok-p">;</span> <span class="tok-o">++</span><span class="tok-n">y</span><span class="tok-p">)</span>
+  <span class="tok-p">{</span>
+    <span class="tok-k">if</span><span class="tok-p">(</span><span class="tok-n">x</span><span class="tok-o">==</span><span class="tok-mi">0</span> <span class="tok-o">||</span> <span class="tok-n">x</span><span class="tok-o">==</span> <span class="tok-n">height</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">){</span>
+      <span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">at</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;</span><span class="tok-p">(</span><span class="tok-n">x</span><span class="tok-p">,</span><span class="tok-n">y</span><span class="tok-p">)</span><span class="tok-o">=</span><span class="tok-mi">255</span><span class="tok-p">;</span>
+    <span class="tok-p">}</span>
+    <span class="tok-k">else</span> <span class="tok-k">if</span><span class="tok-p">(</span><span class="tok-n">y</span><span class="tok-o">==</span><span class="tok-mi">0</span> <span class="tok-o">||</span> <span class="tok-n">y</span><span class="tok-o">==</span><span class="tok-n">width</span><span class="tok-o">-</span><span class="tok-mi">1</span><span class="tok-p">){</span>
+      <span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">at</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;</span><span class="tok-p">(</span><span class="tok-n">x</span><span class="tok-p">,</span><span class="tok-n">y</span><span class="tok-p">)</span><span class="tok-o">=</span><span class="tok-mi">255</span><span class="tok-p">;</span>
+    <span class="tok-p">}</span>
+  <span class="tok-p">}</span>
+<span class="tok-p">}</span>
+<span class="tok-c1">//Tira todas as bolhas que tocam a margem criada e a mesma</span>
+<span class="tok-n">floodFill</span><span class="tok-p">(</span><span class="tok-n">image</span><span class="tok-p">,</span><span class="tok-n">p</span><span class="tok-p">,</span><span class="tok-mi">0</span><span class="tok-p">);</span>
+<span class="tok-c1">//Cria o plano de fundo com valor diferente do aplicado aos buracos das bolhas</span>
+<span class="tok-n">floodFill</span><span class="tok-p">(</span><span class="tok-n">image</span><span class="tok-p">,</span><span class="tok-n">p</span><span class="tok-p">,</span><span class="tok-mi">1</span><span class="tok-p">);</span>
+<span class="tok-c1">// busca  e rotulação dos objetos presentes na imagem, assumindo que todos não tem buraco</span>
+  <span class="tok-n">nobjects</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">;</span>
+  <span class="tok-k">for</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">i</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-n">i</span><span class="tok-o">&lt;</span><span class="tok-n">height</span><span class="tok-p">;</span> <span class="tok-n">i</span><span class="tok-o">++</span><span class="tok-p">){</span>
+    <span class="tok-k">for</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">j</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-n">j</span><span class="tok-o">&lt;</span><span class="tok-n">width</span><span class="tok-p">;</span> <span class="tok-n">j</span><span class="tok-o">++</span><span class="tok-p">){</span>
+      <span class="tok-k">if</span><span class="tok-p">(</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">at</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;</span><span class="tok-p">(</span><span class="tok-n">i</span><span class="tok-p">,</span><span class="tok-n">j</span><span class="tok-p">)</span> <span class="tok-o">==</span> <span class="tok-mi">255</span><span class="tok-p">){</span>
+		<span class="tok-c1">// achou um objeto</span>
+		<span class="tok-n">nobjects</span><span class="tok-o">++</span><span class="tok-p">;</span>
+		<span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">x</span><span class="tok-o">=</span><span class="tok-n">j</span><span class="tok-p">;</span>
+		<span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">y</span><span class="tok-o">=</span><span class="tok-n">i</span><span class="tok-p">;</span>
+		<span class="tok-n">floodFill</span><span class="tok-p">(</span><span class="tok-n">image</span><span class="tok-p">,</span><span class="tok-n">p</span><span class="tok-p">,</span><span class="tok-n">tonNpossuiBuraco</span><span class="tok-p">);</span>
+	  <span class="tok-p">}</span>
+	<span class="tok-p">}</span>
+<span class="tok-p">}</span>
+<span class="tok-c1">//busca objetvos com buraco, dentro do universo dos objetos que foram encontrados  e rotulados antes</span>
+<span class="tok-k">for</span> <span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">x</span> <span class="tok-o">=</span> <span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-n">x</span> <span class="tok-o">&lt;</span> <span class="tok-n">height</span><span class="tok-p">;</span> <span class="tok-o">++</span><span class="tok-n">x</span><span class="tok-p">)</span>
+<span class="tok-p">{</span>
+  <span class="tok-k">for</span> <span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">y</span> <span class="tok-o">=</span> <span class="tok-mi">0</span><span class="tok-p">;</span> <span class="tok-n">y</span> <span class="tok-o">&lt;</span> <span class="tok-n">width</span><span class="tok-p">;</span> <span class="tok-o">++</span><span class="tok-n">y</span><span class="tok-p">)</span>
+  <span class="tok-p">{</span>
+    <span class="tok-k">if</span><span class="tok-p">(</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">at</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;</span><span class="tok-p">(</span><span class="tok-n">x</span><span class="tok-p">,</span><span class="tok-n">y</span><span class="tok-p">)</span><span class="tok-o">==</span> <span class="tok-n">tonNpossuiBuraco</span> <span class="tok-o">||</span> <span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">at</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;</span><span class="tok-p">(</span><span class="tok-n">x</span><span class="tok-p">,</span><span class="tok-n">y</span><span class="tok-p">)</span><span class="tok-o">==</span> <span class="tok-n">tonPossuiBuraco</span><span class="tok-p">){</span>
+      <span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">x</span><span class="tok-o">=</span><span class="tok-n">y</span><span class="tok-p">;</span>
+      <span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">y</span><span class="tok-o">=</span><span class="tok-n">x</span><span class="tok-p">;</span>
+    <span class="tok-p">}</span>
+    <span class="tok-k">else</span> <span class="tok-k">if</span><span class="tok-p">(</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">at</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;</span><span class="tok-p">(</span><span class="tok-n">x</span><span class="tok-p">,</span><span class="tok-n">y</span><span class="tok-p">)</span><span class="tok-o">==</span><span class="tok-mi">0</span><span class="tok-p">){</span>
+      <span class="tok-k">if</span> <span class="tok-p">(</span><span class="tok-n">image</span><span class="tok-p">.</span><span class="tok-n">at</span><span class="tok-o">&lt;</span><span class="tok-n">uchar</span><span class="tok-o">&gt;</span><span class="tok-p">(</span><span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">y</span><span class="tok-p">,</span><span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">x</span><span class="tok-p">)</span><span class="tok-o">==</span><span class="tok-n">tonNpossuiBuraco</span><span class="tok-p">)</span>
+      <span class="tok-p">{</span>
+        <span class="tok-n">floodFill</span><span class="tok-p">(</span><span class="tok-n">image</span><span class="tok-p">,</span><span class="tok-n">p</span><span class="tok-p">,</span><span class="tok-n">tonPossuiBuraco</span><span class="tok-p">);</span>
+        <span class="tok-n">nobjectscomburaco</span><span class="tok-o">++</span><span class="tok-p">;</span>
+      <span class="tok-p">}</span>
+      <span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">x</span><span class="tok-o">=</span><span class="tok-n">y</span><span class="tok-p">;</span>
+      <span class="tok-n">p</span><span class="tok-p">.</span><span class="tok-n">y</span><span class="tok-o">=</span><span class="tok-n">x</span><span class="tok-p">;</span>
+      <span class="tok-n">floodFill</span><span class="tok-p">(</span><span class="tok-n">image</span><span class="tok-p">,</span><span class="tok-n">p</span><span class="tok-p">,</span><span class="tok-n">tonPossuiBuraco</span><span class="tok-p">);</span>
+    <span class="tok-p">}</span>
+  <span class="tok-p">}</span>
+<span class="tok-p">}</span>
+  <span class="tok-n">cout</span><span class="tok-o">&lt;&lt;</span><span class="tok-s">&quot;Elementos sem buraco(s): &quot;</span><span class="tok-o">&lt;&lt;</span><span class="tok-p">(</span><span class="tok-n">nobjects</span><span class="tok-o">-</span><span class="tok-n">nobjectscomburaco</span><span class="tok-p">)</span><span class="tok-o">&lt;&lt;</span><span class="tok-n">endl</span><span class="tok-p">;</span>
+  <span class="tok-n">cout</span><span class="tok-o">&lt;&lt;</span><span class="tok-s">&quot;Elementos com buraco(s):&quot;</span> <span class="tok-o">&lt;&lt;</span> <span class="tok-n">nobjectscomburaco</span><span class="tok-o">&lt;&lt;</span><span class="tok-n">endl</span><span class="tok-p">;</span>
+  <span class="tok-n">imshow</span><span class="tok-p">(</span><span class="tok-s">&quot;image&quot;</span><span class="tok-p">,</span> <span class="tok-n">image</span><span class="tok-p">);</span>
+  <span class="tok-n">imwrite</span><span class="tok-p">(</span><span class="tok-s">&quot;labeling.png&quot;</span><span class="tok-p">,</span> <span class="tok-n">image</span><span class="tok-p">);</span>
+  <span class="tok-n">waitKey</span><span class="tok-p">();</span>
+  <span class="tok-k">return</span> <span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Antes e depois</div>
+<p><span class="image"><img src="./figures/bolhas.png" alt="bolhas"></span>
+<span class="image"><img src="./figures/labeling.png" alt="role=right"></span></p>
+</div>
+<div class="paragraph">
+<div class="title">Saída do terminal</div>
+<p><span class="image"><img src="./figures/terminal_labeling.png" alt="role=right"></span></p>
 </div>
 </div>
 </div>
@@ -696,7 +797,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-09-08 13:59:35 BRT
+Last updated 2017-09-09 03:45:53 BRT
 </div>
 </div>
 <script type="text/x-mathjax-config">

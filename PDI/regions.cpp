@@ -80,7 +80,7 @@ if (P2_X > largura or P2_Y > largura)
 			image.at<uchar>(i,j)=255-image.at<uchar>(i,j);
 			}
 		}
-		imshow("janela",image);
+		imshow("image",image);
 		waitKey();
 	}	
 else{

@@ -21,7 +21,7 @@ image:biel.png[]
 image:bolhas.png["role=right"]
 
 === 1.1 Invertendo cores de uma região ===
-O programa link:PDI/regions.cpp[regions] é capaz de receber como entrada dois pontos (stem:[\P_{1}] e stem:[\P_{2}])  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada.	
+O programa link:PDI/regions.cpp[regions.cpp] é capaz de receber como entrada dois pontos (stem:[\P_{1}] e stem:[\P_{2}])  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada.	
 
 [[exa_hello,Hello]]
 [source,cpp]
@@ -39,7 +39,7 @@ image:regions.png["role=right"]
 
 
 === 1.2 Invertendo quadrantes de uma imagem ===
-O programa link:PDI/trocaregioes.cpp[trocaregiões] é capaz de dividir a imagem em quatro partes e inverter seus quadrantes em diagonal.
+O programa link:PDI/trocaregioes.cpp[trocaregioes.cpp] é capaz de dividir a imagem em quatro partes e inverter seus quadrantes em diagonal.
 
 [[exa,Hello]]
 [source,cpp]
@@ -51,4 +51,24 @@ include::PDI/trocaregioes.cpp[]
 .Antes e depois:
 
 image:trocaregioesbefore.png[]
-image:trocaregioes.png[256,256,"role=right"]
+image:trocaregioes.png["role=right"]
+
+=== 1.3 Rotulando e realizando contagem de objetos pertencentes a uma imagem ===
+O objetivo dessa prática de programação foi aprimorar o programa link:PDI/labeling.cpp[labeling.cpp] ,previamento desenvolvido pelo professor Agostinho, da seguinte maneira: o algorítmo ignora objetos que estejam no limite da borda da figura e faz destinção de objetos com buracos em seu interior e objetos que não contenham buracos. 
+
+O programa link:PDI/labeling_aprimorado.cpp[labeling_aprimorado.cpp] foi desenvolvido e seu código segue abaixo, bem como seus resultados.
+
+[[exa1,Hello]]
+[source,cpp]
+.labeling_aprimorado.cpp
+----
+include::PDI/labeling_aprimorado.cpp[]
+----
+
+.Antes e depois
+
+image:bolhas.png[]
+image:labeling.png["role=right"]
+
+.Saída do terminal
+image:terminal_labeling.png["role=right"]
