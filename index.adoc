@@ -1,7 +1,6 @@
 :source-highlighter: pygments 	
 :imagesdir: ./figures
-
-:stem: 
+:stem:
 
 = DCA0445: Processamento Digital de Imagens
 Joelson Rocha <JoelsonRocha.Eng@gmail.com>
@@ -21,7 +20,7 @@ image:biel.png[]
 image:bolhas.png["role=right"]
 
 === 1.1 Invertendo cores de uma região ===
-O programa link:PDI/regions.cpp[regions.cpp] é capaz de receber como entrada dois pontos (stem:[\P_{1}] e stem:[\P_{2}])  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada.	
+O programa link:PDI/regions.cpp[regions.cpp] é capaz de receber como entrada dois pontos (stem:[P_{1}] e stem:[P_{2}])  que compõem um retângulo de vértices opostos. Essa região, em efeito negativo, é criada.	
 
 [[exa_hello,Hello]]
 [source,cpp]
@@ -72,3 +71,58 @@ image:labeling.png["role=right"]
 
 .Saída do terminal
 image:terminal_labeling.png["role=right"]
+
+== 2. Unidade II ==
+
+=== 2.1 Filtro Homomórfico ===
+ 
+Para a implementação do link:filtrohomomorfico.cpp[filtrohomomorfico.cpp] utilizou-se como programa-base o arquivo link:PDI/dft.cpp[dft.cpp]. Esse tipo de filtro é utilizado para aprimorar a iluminação de cenas e tem a seguinte fórmula:
+stem:[H(u,v)= (\gamma H - \gamma L)(1 - e^{\frac{-c(D^{2}(u,v))}{D_{0}^{2}}})] 
+
+Onde:
+
+* stem:[\gamma H] e stem:[\gamma L]: determinam o nível de claridade da filtragem ;
+* stem:[D_{0}]: regula a transição da luminosidade na imagem;
+* stem:[c]: implica em uma filtragem mais rápida ou lenta.
+O código fonte desenvolvido segue abaixo:
+
+[source,cpp]
+.filtrohomomorfico.cpp
+----
+include::PDI/filtrohomomorfico.cpp[]
+----
+
+.Imagem utilizada:
+
+image:relógio_fhomomorfico.png[]
+
+.Antes e depois:
+
+image:filtrohomomorfico2.png["role=center"]
+
+.Parâmetros utilizados:
+
+image:FHterminal.png["role=center"]
+
+=== 2.2 Pontilhismo e algorítmo de Canny ===
+
+O programa link:PDI/cannypoints.cpp[cannypoints.cpp]utiliza o algorítmo de detecção de bordas para aprimorar a técnica de pontilhismo utilizada por link:http://www.georgesseurat.org/[George Seurat]. Foram utilizados como base dois programas desenvolvidos pelo professor Agostinho: link:PDI/canny.cpp[canny.cpp] e link:PDI/pontilhismo.cpp[pontilhismo.cpp].
+O código do programa desenvolvido segue abaixo:
+
+[source,cpp]
+.cannypoints.cpp
+----
+include::PDI/cannypoints.cpp[]
+----
+
+.Imagem utilizada:
+
+image:dino.png[]
+
+.Primeira iteração:
+
+image:cannypoints1.png[]
+
+.Última iteração:
+
+image:cannypoints2.png[]
