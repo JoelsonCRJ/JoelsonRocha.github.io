@@ -106,7 +106,7 @@ image:FHterminal.png["role=center"]
 
 === 2.2 Pontilhismo e algorítmo de Canny ===
 
-O programa link:PDI/cannypoints.cpp[cannypoints.cpp]utiliza o algorítmo de detecção de bordas para aprimorar a técnica de pontilhismo utilizada por link:http://www.georgesseurat.org/[George Seurat]. Foram utilizados como base dois programas desenvolvidos pelo professor Agostinho: link:PDI/canny.cpp[canny.cpp] e link:PDI/pontilhismo.cpp[pontilhismo.cpp].
+O programa link:PDI/cannypoints.cpp[cannypoints.cpp] utiliza o algorítmo de detecção de bordas para aprimorar a técnica de pontilhismo utilizada por link:http://www.georgesseurat.org/[George Seurat]. Foram utilizados como base dois programas desenvolvidos pelo professor Agostinho: link:PDI/canny.cpp[canny.cpp] e link:PDI/pontilhismo.cpp[pontilhismo.cpp].
 O código do programa desenvolvido segue abaixo:
 
 [source,cpp]
