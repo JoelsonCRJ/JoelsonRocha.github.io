@@ -78,7 +78,7 @@ Para a implementação do link:PDI/equalizeHist.cpp[EqualizeHist.cpp] utilizou c
 [source,cpp]
 .equalizeHist.cpp
 ----
-include::PDI/tiltshift.cpp[]
+include::PDI/equalizeHist.cpp[]
 ----
 
 O programa equaliza uma imagem gerada a partir de uma webcam, a exibe em tempo real e ,ao ser finalizado, gera dois arquivos: link:figures/noequalhist.png[noequalhist.cpp], imagem original, e link:figures/equalhist.png[equalhist.cpp], imagem com seu histograma equalizado. Ambas são exibidas abaixo:
@@ -90,9 +90,25 @@ image:noequalhist.png[]
 image:equalhist.png[]
 
 
+=== 1.6 Filtro Especial modificado ===
+Para a implementação do link:PDI/laplgauss.cpp[laplgauss.cpp] utilizou-se como programa-base o arquivo link:PDI/filtroespacial.cpp[filtroespacial.cpp]. A proposta desse exercício é adicionar ao programa disponibilizado pelo professor a função de filtro Laplaciano Gaussiano da imagem capturada e compará-la com o Gaussiano da mesma.
+[source,cpp]
+.laplgauss.cpp
+----
+include::PDI/laplgauss.cpp[]
+----
+
+.Imagem Original
+image:original_lg.png[]
+
+.Laplaciano da imagem
+image:laplaciano.png[]
+
+.Laplaciano Gaussiano da imagem
+image:laplacianogaussiano.png[]
 
 === 1.7 TiltShift ===
-Para a implementação do link:PDI/tiltshift.cpp[TiltShift.cpp] utilizou como programa-base o arquivo link:PDI/addweighted.cpp[addweighted.cpp].
+Para a implementação do link:PDI/tiltshift.cpp[TiltShift.cpp] utilizou-se como programa-base o arquivo link:PDI/addweighted.cpp[addweighted.cpp].
 
 [source,cpp]
 .tiltshift.cpp
@@ -102,9 +118,22 @@ include::PDI/tiltshift.cpp[]
 
 Para realizar o algorítmo utilizou a imagem link:figures/carros.png[carros.png] e sua respectiva imagem borrada link:figures/carrosborrada.png[carrosborrada.png]. Após a execução do programa, obteve como resultado a imagem link:figures/tiltshift_result.png[tiltshift_result.png], abaixo:
 
-.Resultado:
 
-image:tiltshift_result.png[]
+[.float-group]
+--
+[.left.text-center]
+.Imagem 
+image:carros.png[role="related thumb left"]
+
+[.left.text-center]
+.Imagem borrada
+image:carrosborrada.png[role="related thumb left"]
+
+[.left.text-center	]
+.Imagem após tiltshift
+image:tiltshift_result.png[role="related thumb left"]
+--
+
 
 
 == 2. Unidade II ==
