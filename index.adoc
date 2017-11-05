@@ -72,6 +72,41 @@ image:labeling.png["role=right"]
 .Saída do terminal
 image:terminal_labeling.png["role=right"]
 
+=== 1.4 Equalizador de histograma ===
+Para a implementação do link:PDI/equalizeHist.cpp[EqualizeHist.cpp] utilizou como programa-base o arquivo link:PDI/histogram.cpp[histogram.cpp] e a função equalizeHist, possibilitando a redistribuição dos tons de cinza da imagem, a fim de torná-los sua distribuição mais uniforme.
+
+[source,cpp]
+.equalizeHist.cpp
+----
+include::PDI/tiltshift.cpp[]
+----
+
+O programa equaliza uma imagem gerada a partir de uma webcam, a exibe em tempo real e ,ao ser finalizado, gera dois arquivos: link:figures/noequalhist.png[noequalhist.cpp], imagem original, e link:figures/equalhist.png[equalhist.cpp], imagem com seu histograma equalizado. Ambas são exibidas abaixo:
+
+.Captura com histograma não equalizado
+image:noequalhist.png[]
+
+.Imagem com histograma modificado
+image:equalhist.png[]
+
+
+
+=== 1.7 TiltShift ===
+Para a implementação do link:PDI/tiltshift.cpp[TiltShift.cpp] utilizou como programa-base o arquivo link:PDI/addweighted.cpp[addweighted.cpp].
+
+[source,cpp]
+.tiltshift.cpp
+----
+include::PDI/tiltshift.cpp[]
+----
+
+Para realizar o algorítmo utilizou a imagem link:figures/carros.png[carros.png] e sua respectiva imagem borrada link:figures/carrosborrada.png[carrosborrada.png]. Após a execução do programa, obteve como resultado a imagem link:figures/tiltshift_result.png[tiltshift_result.png], abaixo:
+
+.Resultado:
+
+image:tiltshift_result.png[]
+
+
 == 2. Unidade II ==
 
 === 2.1 Filtro Homomórfico ===
