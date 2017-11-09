@@ -73,7 +73,7 @@ image:labeling.png["role=right"]
 image:terminal_labeling.png["role=right"]
 
 === 1.4 Equalizador de histograma ===
-Para a implementação do link:PDI/equalizeHist.cpp[EqualizeHist.cpp] utilizou como programa-base o arquivo link:PDI/histogram.cpp[histogram.cpp] e a função equalizeHist, possibilitando a redistribuição dos tons de cinza da imagem, a fim de torná-los sua distribuição mais uniforme.
+Para a implementação do link:PDI/equalizeHist.cpp[EqualizeHist.cpp] utilizou-se como programa-base o arquivo link:PDI/histogram.cpp[histogram.cpp] e a função equalizeHist, possibilitando a redistribuição dos tons de cinza da imagem, a fim de torná-los sua distribuição mais uniforme.
 
 [source,cpp]
 .equalizeHist.cpp
@@ -89,6 +89,27 @@ image:noequalhist.png[]
 .Imagem com histograma modificado
 image:equalhist.png[]
 
+=== 1.5 Motion detector ===
+
+Para a implementação do link:PDI/motiondetector.cpp[motiondetector.cpp] utilizou-se como programa-base o arquivo link:PDI/histogram.cpp[histogram.cpp]. A proposta para esse programa foi desenvolver um algorítmo que seja capaz de detectar movimentação à partir da diferença no histograma dos quadros capturados em tempo real por uma câmera. 
+[source,cpp]
+.motiondetector.cpp
+----
+include::PDI/motiondetector.cpp[]
+----
+
+O resultado da execução do algorítmo segue abaixo:
+
+[.float-group]
+--
+[.left.text-center]
+.Primeiro frame 
+image:motion1.png[role="related thumb left"]
+
+[.left.text-center]
+.Segundo frame
+image:motion2.png[role="related thumb left"]
+--
 
 === 1.6 Filtro Espacial modificado ===
 Para a implementação do link:PDI/laplgauss.cpp[laplgauss.cpp] utilizou-se como programa-base o arquivo link:PDI/filtroespacial.cpp[filtroespacial.cpp]. A proposta desse exercício é adicionar ao programa disponibilizado pelo professor a função de filtro Laplaciano Gaussiano da imagem capturada e compará-la com o Gaussiano da mesma.
