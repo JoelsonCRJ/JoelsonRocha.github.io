@@ -90,7 +90,7 @@ image:noequalhist.png[]
 image:equalhist.png[]
 
 
-=== 1.6 Filtro Especial modificado ===
+=== 1.6 Filtro Espacial modificado ===
 Para a implementação do link:PDI/laplgauss.cpp[laplgauss.cpp] utilizou-se como programa-base o arquivo link:PDI/filtroespacial.cpp[filtroespacial.cpp]. A proposta desse exercício é adicionar ao programa disponibilizado pelo professor a função de filtro Laplaciano Gaussiano da imagem capturada e compará-la com o Gaussiano da mesma.
 [source,cpp]
 .laplgauss.cpp
