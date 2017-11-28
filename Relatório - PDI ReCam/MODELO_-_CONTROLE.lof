@@ -1,18 +1,6 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Polos: 0.905; 0.992; 0.998\relax }}{14}{figure.caption.4}
-\contentsline {figure}{\numberline {2}{\ignorespaces Segunda parte Polos: 0.905; 0.992; 0.998\relax }}{14}{figure.caption.5}
-\contentsline {figure}{\numberline {3}{\ignorespaces Polos: 0; 0.992; 0.998\relax }}{15}{figure.caption.6}
-\contentsline {figure}{\numberline {4}{\ignorespaces Polos: 0.905; 0; 0.998\relax }}{15}{figure.caption.7}
-\contentsline {figure}{\numberline {5}{\ignorespaces Polos: 0.905; 0.992; 0\relax }}{16}{figure.caption.8}
-\contentsline {figure}{\numberline {6}{\ignorespaces Polos: 0.905; 0; 0\relax }}{16}{figure.caption.9}
-\contentsline {figure}{\numberline {7}{\ignorespaces Polos: 1.2; 0.992; 0.998\relax }}{17}{figure.caption.10}
-\contentsline {figure}{\numberline {8}{\ignorespaces Polos: 0.905; 1.2; 0.998\relax }}{17}{figure.caption.11}
-\contentsline {figure}{\numberline {9}{\ignorespaces Polos: 0.905; 0.992; 1.2\relax }}{18}{figure.caption.12}
-\contentsline {figure}{\numberline {10}{\ignorespaces Polos: 0.905 + i0.03; 0.905 + i0.03; -0.998\relax }}{19}{figure.caption.13}
-\contentsline {figure}{\numberline {11}{\ignorespaces Polos: 0.905 + i0.05; 0.905 + i0.05; -5\relax }}{19}{figure.caption.14}
-\contentsline {figure}{\numberline {12}{\ignorespaces Polos: 0.905 + i0.03; 0.905 + i0.03; -0.998 + i0.03\relax }}{20}{figure.caption.15}
-\contentsline {figure}{\numberline {13}{\ignorespaces Polos: 0.905 + i0.1; 0.905 + i0.1; -0.998\relax }}{20}{figure.caption.16}
-\contentsline {figure}{\numberline {14}{\ignorespaces \relax }}{21}{figure.caption.17}
-\contentsline {figure}{\numberline {15}{\ignorespaces Polos: 0.905 + i0.1; 0.905 + i0.1; -0.998\relax }}{21}{figure.caption.18}
-\contentsline {figure}{\numberline {16}{\ignorespaces Polos: 0.905 + i0.1; 0.905 + i0.1; -0.998\relax }}{22}{figure.caption.19}
-\contentsline {figure}{\numberline {17}{\ignorespaces Polos: 0.905 + i0.1; 0.905 + i0.1; -0.998\relax }}{22}{figure.caption.20}
+\contentsline {figure}{\numberline {1}{\ignorespaces C\IeC {\^a}mera de circuito interno em baixa resolu\IeC {\c c}\IeC {\~a}o.\relax }}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {2}{\ignorespaces Caracter\IeC {\'\i }stica de dois ret\IeC {\^a}ngulos \IeC {\'e} mostrada em [A] e [B], de tr\IeC {\^e}s em [C] e de quatro em [D].\relax }}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {3}{\ignorespaces Melhores caracter\IeC {\'\i }sticas selecionadas pelo algor\IeC {\'\i }tmo de AdaBoost.\relax }}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {4}{\ignorespaces C\IeC {\'o}digo comentado para uso no m\IeC {\'o}dulo ReCam.\relax }}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {5}{\ignorespaces Imagem resultante.\relax }}{10}{figure.caption.8}

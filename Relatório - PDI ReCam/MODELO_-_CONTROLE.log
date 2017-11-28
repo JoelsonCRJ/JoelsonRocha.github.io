@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6530) (preloaded format=pdflatex 2017.11.25)  25 NOV 2017 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6530) (preloaded format=pdflatex 2017.11.25)  27 NOV 2017 21:18
 entering extended mode
 **./MODELO_-_CONTROLE.tex
 (MODELO_-_CONTROLE.tex
@@ -666,6 +666,11 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count111
 \cp@tempcnt=\count112
 )
+(/home/Joelson/.miktex/texmfs/install/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
 (/home/Joelson/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
@@ -764,7 +769,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip60
 )
-(MODELO_-_CONTROLE.aux (apendice.aux))
+(MODELO_-_CONTROLE.aux)
 \openout1 = `MODELO_-_CONTROLE.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -865,7 +870,7 @@ Package epstopdf Info: Source file: <UFRN.eps>
 FRN.eps>
 (epstopdf)             \includegraphics on input line 54.
 Package epstopdf Info: Output file is already uptodate.
-<UFRN-eps-converted-to.pdf, id=106, pagebox=cropbox, 317.185pt x 131.49126pt>
+<UFRN-eps-converted-to.pdf, id=43, pagebox=cropbox, 317.185pt x 131.49126pt>
 File: UFRN-eps-converted-to.pdf Graphic file (type pdf)
 <use UFRN-eps-converted-to.pdf>
 Package pdftex.def Info: UFRN-eps-converted-to.pdf  used on input line 54. on i
@@ -882,7 +887,7 @@ Package epstopdf Info: Source file: <DCA.eps>
 A.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
-<DCA-eps-converted-to.pdf, id=107, pagebox=cropbox, 316.18124pt x 131.49126pt>
+<DCA-eps-converted-to.pdf, id=44, pagebox=cropbox, 316.18124pt x 131.49126pt>
 File: DCA-eps-converted-to.pdf Graphic file (type pdf)
 <use DCA-eps-converted-to.pdf>
 Package pdftex.def Info: DCA-eps-converted-to.pdf  used on input line 59. on in
@@ -894,90 +899,98 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 80.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 106.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 106.
  [1
 
 {/home/Joelson/.miktex/texmfs/data/pdftex/config/pdftex.map} <./UFRN-eps-conver
 ted-to.pdf> <./DCA-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 14
-1.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 13
+4.
  (/home/Joelson/.miktex/texmfs/install/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 14
-1.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 13
+4.
  (/home/Joelson/.miktex/texmfs/install/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 14
-1.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 13
+4.
 
 (/home/Joelson/.miktex/texmfs/install/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 14
-1.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 13
+4.
 
 (/home/Joelson/.miktex/texmfs/install/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 141.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 134.
 
 
 (/home/Joelson/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 141.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 141.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 141.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
 
-Overfull \hbox (15.62831pt too wide) in paragraph at lines 139--146
-\T1/ptm/m/n/12 temas de Con-t-role, cor-re-spon-dente à avali-ação da 3$[]$ uni
-dade
+Overfull \hbox (2.6597pt too wide) in paragraph at lines 132--138
+[]\T1/ptm/m/n/12 Relatório ap-re-sen-tado à dis-ci-plina de Pro-ces-sa-mento Di
+g-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 154.
 [2]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 176.
  [3]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 220.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 220.
- [4]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 227.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 187.
  (MODELO_-_CONTROLE.lof)
 \tf@lof=\write4
 \openout4 = `MODELO_-_CONTROLE.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 230.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 230.
- [5] (MODELO_-_CONTROLE.toc)
+(babel)             in language  on input line 190.
+ [4] (MODELO_-_CONTROLE.toc)
 \tf@toc=\write5
 \openout5 = `MODELO_-_CONTROLE.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 240.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 240.
- [6]
+(babel)             in language  on input line 200.
+ [5]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 246.
+(babel)             in language  on input line 206.
+<01-circuitointerno.jpg, id=103, 572.1375pt x 260.975pt>
+File: 01-circuitointerno.jpg Graphic file (type jpg)
+<use 01-circuitointerno.jpg>
+Package pdftex.def Info: 01-circuitointerno.jpg  used on input line 215. on inp
+ut line 215.
+Package pdftex.def Info: Requested size: 486.31917pt x 221.82979pt on input lin
+e 215.
 
+Overfull \hbox (2.6223pt too wide) in paragraph at lines 215--216
+[][] 
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 223.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -985,363 +998,134 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 226.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 253.
-[7]
+(babel)             in language  on input line 226.
+[6 <./01-circuitointerno.jpg>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 260.
+(babel)             in language  on input line 233.
+
+Overfull \hbox (1.56711pt too wide) in paragraph at lines 234--235
+ \T1/ptm/m/n/12 Em 2001, Paul Vi-ola e Michael Jones [[]2[]] pro-puseram uma té
+c-nica de de-tecção de ob-je-tos chamada
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 236.
+
+(/home/Joelson/.miktex/texmfs/install/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 236.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 269.
+(babel)             in language  on input line 240.
+<imagemintegral.png, id=111, 197.73875pt x 172.645pt>
+File: imagemintegral.png Graphic file (type png)
+<use imagemintegral.png>
+Package pdftex.def Info: imagemintegral.png  used on input line 245. on input l
+ine 245.
+Package pdftex.def Info: Requested size: 197.73827pt x 172.64456pt on input lin
+e 245.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 258.
+ [7 <./imagemintegral.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 292.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 292.
- [8]
+(babel)             in language  on input line 262.
+
+Overfull \hbox (3.00467pt too wide) in paragraph at lines 266--267
+[] \T1/ptm/m/n/12 De acordo com Ro-jas(2009)[x], esse al-go-rítmo foi pro-posto
+ por Yoav Fre-und e Robert Shapire,
+ []
+
+<adaboost.png, id=129, 334.24875pt x 211.79124pt>
+File: adaboost.png Graphic file (type png)
+<use adaboost.png>
+Package pdftex.def Info: adaboost.png  used on input line 286. on input line 28
+6.
+Package pdftex.def Info: Requested size: 167.12396pt x 105.89536pt on input lin
+e 286.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 293.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 296.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 362.
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 367--387
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--387
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--404
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 429--453
-
- []
-
+(babel)             in language  on input line 296.
+[8 <./adaboost.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 453.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 453.
-[10]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 459.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 460.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 461.
+(babel)             in language  on input line 300.
+<script.png, id=141, 736.7525pt x 606.265pt>
+File: script.png Graphic file (type png)
+<use script.png>
+Package pdftex.def Info: script.png  used on input line 307. on input line 307.
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--467
+Package pdftex.def Info: Requested size: 368.37535pt x 303.13176pt on input lin
+e 307.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 312.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 312.
+ [9 <./script.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 314.
+<resultado.png, id=150, 948.54375pt x 534.99875pt>
+File: resultado.png Graphic file (type png)
+<use resultado.png>
+Package pdftex.def Info: resultado.png  used on input line 319. on input line 3
+19.
+Package pdftex.def Info: Requested size: 474.2707pt x 267.49872pt on input line
+ 319.
 
+Overfull \hbox (2.17589pt too wide) in paragraph at lines 324--325
+[]  \T1/ptm/m/n/12 Em suma, foi pos-sível ob-ser-var que real-mente este tipo d
+e abor-dagem é promis-sora. Provavéis
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 496.
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
-
- []
-
+(babel)             in language  on input line 327.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 526.
+(babel)             in language  on input line 327.
+[10 <./resultado.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 556.
-
-Underfull \hbox (badness 10000) in paragraph at lines 557--562
-
- []
-
-
-Overfull \hbox (35.53261pt too wide) in paragraph at lines 565--573
-[]\T1/ptm/m/n/12 Portanto, temos que $\OML/ztmcm/m/it/12 q[]\OT1/ztmcm/m/n/12 (
-\OML/ztmcm/m/it/12 Ga\OT1/ztmcm/m/n/12 )$ \T1/ptm/m/n/12 = $\OML/ztmcm/m/it/12 
-G[] \OT1/ztmcm/m/n/12 + 2\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 8948 \OMS/ztmcm/
-m/n/12  \OML/ztmcm/m/it/12 G[] \OT1/ztmcm/m/n/12 + 2\OML/ztmcm/m/it/12 :\OT1/z
-tmcm/m/n/12 7905 \OMS/ztmcm/m/n/12  \OML/ztmcm/m/it/12 G \OMS/ztmcm/m/n/12   \
-OT1/ztmcm/m/n/12 0\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 8957 \OMS/ztmcm/m/n/12 
- \OML/ztmcm/m/it/12 I$ \T1/ptm/m/n/12 = $[]$ 
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 582.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 582.
-[11]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 583.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 583.
- [12]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 589.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 591.
-
-Underfull \hbox (badness 10000) in paragraph at lines 592--593
-
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 596.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 599.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 603.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 603.
-[13]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 609.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 611.
-<Polos_0_905__0_992__0_998__2_.png, id=247, 1795.70876pt x 1077.02374pt>
-File: Polos_0_905__0_992__0_998__2_.png Graphic file (type png)
-<use Polos_0_905__0_992__0_998__2_.png>
-Package pdftex.def Info: Polos_0_905__0_992__0_998__2_.png  used on input line 
-618. on input line 618.
-Package pdftex.def Info: Requested size: 359.13539pt x 215.40092pt on input lin
-e 618.
-<Polos_0_905__0_992__0_998.png, id=249, 1795.70876pt x 1077.02374pt>
-File: Polos_0_905__0_992__0_998.png Graphic file (type png)
-<use Polos_0_905__0_992__0_998.png>
-Package pdftex.def Info: Polos_0_905__0_992__0_998.png  used on input line 623.
- on input line 623.
-Package pdftex.def Info: Requested size: 359.13539pt x 215.40092pt on input lin
-e 623.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 627.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 627.
- [14 <./Polos_0_905__0_992__0_998__2_.png> <./Polos_0_905__0_992__0_998.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 631.
-<Polos_0__0_992__0_998.png, id=256, 1798.72pt x 1091.07625pt>
-File: Polos_0__0_992__0_998.png Graphic file (type png)
-<use Polos_0__0_992__0_998.png>
-Package pdftex.def Info: Polos_0__0_992__0_998.png  used on input line 638. on 
-input line 638.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.21138pt on input lin
-e 638.
-<Polo_0_905__0__0_998__2_.png, id=257, 1798.72pt x 1091.07625pt>
-File: Polo_0_905__0__0_998__2_.png Graphic file (type png)
-<use Polo_0_905__0__0_998__2_.png>
-Package pdftex.def Info: Polo_0_905__0__0_998__2_.png  used on input line 643. 
-on input line 643.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.21138pt on input lin
-e 643.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 647.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 647.
- [15 <./Polos_0__0_992__0_998.png> <./Polo_0_905__0__0_998__2_.png>]
-<Polos_0_905__0_992__0__2_.png, id=264, 1798.72pt x 1091.07625pt>
-File: Polos_0_905__0_992__0__2_.png Graphic file (type png)
-<use Polos_0_905__0_992__0__2_.png>
-Package pdftex.def Info: Polos_0_905__0_992__0__2_.png  used on input line 652.
- on input line 652.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.21138pt on input lin
-e 652.
-<Polos_0_905__0__0.png, id=265, 1798.72pt x 1092.08pt>
-File: Polos_0_905__0__0.png Graphic file (type png)
-<use Polos_0_905__0__0.png>
-Package pdftex.def Info: Polos_0_905__0__0.png  used on input line 657. on inpu
-t line 657.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.41212pt on input lin
-e 657.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 661.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 661.
- [16 <./Polos_0_905__0_992__0__2_.png> <./Polos_0_905__0__0.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 665.
-<Polos_1_2__0_992__0_998.png, id=272, 1798.72pt x 1091.07625pt>
-File: Polos_1_2__0_992__0_998.png Graphic file (type png)
-<use Polos_1_2__0_992__0_998.png>
-Package pdftex.def Info: Polos_1_2__0_992__0_998.png  used on input line 671. o
-n input line 671.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.21138pt on input lin
-e 671.
-<Polos_0_905__1_2__0_998.png, id=273, 1798.72pt x 1091.07625pt>
-File: Polos_0_905__1_2__0_998.png Graphic file (type png)
-<use Polos_0_905__1_2__0_998.png>
-Package pdftex.def Info: Polos_0_905__1_2__0_998.png  used on input line 676. o
-n input line 676.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.21138pt on input lin
-e 676.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 680.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 680.
- [17 <./Polos_1_2__0_992__0_998.png> <./Polos_0_905__1_2__0_998.png>]
-<Polos_0_905__0_992__1_2.png, id=280, 1798.72pt x 1091.07625pt>
-File: Polos_0_905__0_992__1_2.png Graphic file (type png)
-<use Polos_0_905__0_992__1_2.png>
-Package pdftex.def Info: Polos_0_905__0_992__1_2.png  used on input line 685. o
-n input line 685.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.21138pt on input lin
-e 685.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 689.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 689.
- [18 <./Polos_0_905__0_992__1_2.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 693.
-<Polos_0_905_i0_03__-0_998.png, id=286, 1798.72pt x 1092.08pt>
-File: Polos_0_905_i0_03__-0_998.png Graphic file (type png)
-<use Polos_0_905_i0_03__-0_998.png>
-Package pdftex.def Info: Polos_0_905_i0_03__-0_998.png  used on input line 699.
- on input line 699.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.41212pt on input lin
-e 699.
-<Polos_0_905_i0_05__-5.png, id=287, 1798.72pt x 1092.08pt>
-File: Polos_0_905_i0_05__-5.png Graphic file (type png)
-<use Polos_0_905_i0_05__-5.png>
-Package pdftex.def Info: Polos_0_905_i0_05__-5.png  used on input line 704. on 
-input line 704.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.41212pt on input lin
-e 704.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 708.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 708.
- [19 <./Polos_0_905_i0_03__-0_998.png> <./Polos_0_905_i0_05__-5.png>]
-<Polos_0_905_i0_03__-0_998_i0_03.png, id=295, 1798.72pt x 1092.08pt>
-File: Polos_0_905_i0_03__-0_998_i0_03.png Graphic file (type png)
-<use Polos_0_905_i0_03__-0_998_i0_03.png>
-Package pdftex.def Info: Polos_0_905_i0_03__-0_998_i0_03.png  used on input lin
-e 713. on input line 713.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.41212pt on input lin
-e 713.
-<Polos_0_905_i0_1__-0_998.png, id=296, 1798.72pt x 1092.08pt>
-File: Polos_0_905_i0_1__-0_998.png Graphic file (type png)
-<use Polos_0_905_i0_1__-0_998.png>
-Package pdftex.def Info: Polos_0_905_i0_1__-0_998.png  used on input line 718. 
-on input line 718.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.41212pt on input lin
-e 718.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 722.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 722.
-
-[20 <./Polos_0_905_i0_03__-0_998_i0_03.png> <./Polos_0_905_i0_1__-0_998.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 726.
-<Ganhos_20__10__3.png, id=303, 1798.72pt x 1092.08pt>
-File: Ganhos_20__10__3.png Graphic file (type png)
-<use Ganhos_20__10__3.png>
-Package pdftex.def Info: Ganhos_20__10__3.png  used on input line 731. on input
- line 731.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.41212pt on input lin
-e 731.
-<Ganhos_20__20__10.png, id=304, 1798.72pt x 1092.08pt>
-File: Ganhos_20__20__10.png Graphic file (type png)
-<use Ganhos_20__20__10.png>
-Package pdftex.def Info: Ganhos_20__20__10.png  used on input line 736. on inpu
-t line 736.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.41212pt on input lin
-e 736.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 740.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 740.
-
-[21 <./Ganhos_20__10__3.png> <./Ganhos_20__20__10.png>]
-<Ganhos_3__90__1.png, id=311, 1798.72pt x 1092.08pt>
-File: Ganhos_3__90__1.png Graphic file (type png)
-<use Ganhos_3__90__1.png>
-Package pdftex.def Info: Ganhos_3__90__1.png  used on input line 745. on input 
-line 745.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.41212pt on input lin
-e 745.
-<Ganhos_3__90__3.png, id=312, 1798.72pt x 1092.08pt>
-File: Ganhos_3__90__3.png Graphic file (type png)
-<use Ganhos_3__90__3.png>
-Package pdftex.def Info: Ganhos_3__90__3.png  used on input line 750. on input 
-line 750.
-Package pdftex.def Info: Requested size: 359.73763pt x 218.41212pt on input lin
-e 750.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 754.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 754.
- [22 <./Ganhos_3__90__1.png> <./Ganhos_3__90__3.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 760.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 765.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 765.
- [23]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 771.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 773.
+(babel)             in language  on input line 334.
  (MODELO_-_CONTROLE.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 779.
+(babel)             in language  on input line 341.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 779.
- [24]
-\openout2 = `apendice.aux'.
-
- (apendice.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 781.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 781.
-
-(MODELO_-_CONTROLE.aux (apendice.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 781.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 781.
+(babel)             in language  on input line 341.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+ (MODELO_-_CONTROLE.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `MODELO_-_CONTROLE.out' has not changed.
-(rerunfilecheck)             Checksum: 6CA97D1C0EA2B4969F5B7BBABE2C0648;1720.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 781.
+(rerunfilecheck)             Checksum: 86F36CDA09EA7B8B6796F9661269743D;681.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
- 8859 strings out of 495212
- 133042 string characters out of 3181238
- 227223 words of memory out of 3000000
- 11877 multiletter control sequences out of 15000+200000
- 49503 words of font info for 73 fonts, out of 3000000 for 9000
+ 8846 strings out of 495212
+ 131400 string characters out of 3181238
+ 224270 words of memory out of 3000000
+ 11911 multiletter control sequences out of 15000+200000
+ 42877 words of font info for 70 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,14n,43p,796b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/Joelson/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi540/cmsy10.p
-k> </home/Joelson/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmsy10.p
-k> </home/Joelson/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmex10.p
-k> </home/Joelson/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi648/cmex10.p
-k> </home/Joelson/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmmi10.p
-k> </home/Joelson/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmr10.pk
->{/home/Joelson/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/Joels
-on/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/Joelson/.mikte
-x/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/Joelson/.miktex/texmfs/
-install/fonts/type1/urw/times/utmb8a.pfb></home/Joelson/.miktex/texmfs/install/
-fonts/type1/urw/times/utmr8a.pfb></home/Joelson/.miktex/texmfs/install/fonts/ty
-pe1/urw/times/utmri8a.pfb>
-Output written on MODELO_-_CONTROLE.pdf (24 pages, 3566006 bytes).
+ 44i,11n,43p,829b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/home/Joelson/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/Joel
+son/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/Joe
+lson/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/Joe
+lson/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/Jo
+elson/.miktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/Joelson/.mi
+ktex/texmfs/install/fonts/type1/urw/symbol/usyr.pfb></home/Joelson/.miktex/texm
+fs/install/fonts/type1/urw/times/utmb8a.pfb></home/Joelson/.miktex/texmfs/insta
+ll/fonts/type1/urw/times/utmr8a.pfb></home/Joelson/.miktex/texmfs/install/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on MODELO_-_CONTROLE.pdf (11 pages, 273157 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 304 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

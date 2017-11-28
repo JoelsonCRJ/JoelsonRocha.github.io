@@ -1,13 +1,21 @@
-\providecommand{\abntreprintinfo}[1]{%
- \citeonline{#1}}
-\setlength{\labelsep}{0pt}\begin{thebibliography}{}
-\providecommand{\abntrefinfo}[3]{}
-\providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.3 }
+\begin{thebibliography}{1}
 
-\bibitem[Mittelbach e Goossens 2004]{LATEX04}
-\abntrefinfo{Mittelbach e Goossens}{MITTELBACH; GOOSSENS}{2004}
-{MITTELBACH, F.; GOOSSENS, M. \emph{The {\LaTeX} Companion}. 2. ed. San
-  Francisco, EUA: Addison-Wesley, 2004.}
+\bibitem{fab}
+F.~B. Gondim, {\em Um modelo de gravação seletiva de imagens em sistemas de
+  segurança}.
+\newblock Federal University of Rio Grande do Norte- UFRN, Natal, Rio Grande do
+  Norte, 2016.
+
+\bibitem{vj}
+P.~Viola and M.~Jones, ``Rapid object detection using a boosted cascade of
+  simple features,'' {\em Computer Vision and Pattern Recognition}, pp.~1--9,
+  Feb. 2001.
+
+\bibitem{opencv}
+``Opencv documentation,'' página na internet, Nov. 2017.
+
+\bibitem{PDI}
+R.~C. Gonzalez and R.~E. Woods, {\em Digital Image Processing}.
+\newblock 3~ed., 2009.
 
 \end{thebibliography}
